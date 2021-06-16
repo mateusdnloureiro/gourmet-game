@@ -15,12 +15,12 @@ public class Response extends Question {
             JOptionPane.showMessageDialog(jFrameParent, "Acertei!!!", "Uhull!!", JOptionPane.INFORMATION_MESSAGE);
         } else {
             final String newResponseDescription = JOptionPane.showInputDialog(jFrameParent, "Qual prato voc\u00ea pensou?", "Desisto!!!", JOptionPane.QUESTION_MESSAGE);
-            if (newResponseDescription == null) { //validating the input
+            if (isNullOrEmpty(newResponseDescription)) { //validating the input
                 return;
             }
 
             final String newDiferenceDescription = JOptionPane.showInputDialog(jFrameParent, newResponseDescription + " \u00e9 _______ mas " + this.description + " n\u00e3o.", "Complete com uma diferen\u00e7a...", JOptionPane.QUESTION_MESSAGE);
-            if (newDiferenceDescription == null) {//validating the input
+            if (isNullOrEmpty(newDiferenceDescription)) {//validating the input
                 return;
             }
 
@@ -39,5 +39,9 @@ public class Response extends Question {
 
     private boolean isResponseYesFromParent() {
         return this == questionParent.getYes();
+    }
+
+    private static boolean isNullOrEmpty(String value) {
+        return value == null || "".equals(value.trim());
     }
 }
