@@ -39,6 +39,6 @@ public class Question {
     }
 
     protected boolean showQuestion(final String title) {
-        return JOptionPane.showConfirmDialog(jFrameParent, "O prato que voc\u00ea pensou \u00e9 " + description + "?", title, JOptionPane.YES_NO_OPTION) == JOptionPane.OK_OPTION;
+        return JOptionPane.showConfirmDialog(jFrameParent, "O prato que voc\u00ea pensou \u00e9 " + description + "?", title, JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION;
     }
 }
