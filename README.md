@@ -4,4 +4,4 @@
 - Build/Artefatos disponibilizados para Java 6, 8, 11
 
 ##### Run
-- java -jar gourmet-game-<versao-java>.jar
+- java -jar gourmet-game-java-8.jar  (exemplo)
