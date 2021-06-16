@@ -1,6 +1,6 @@
-###Gourmet Game é um Desafio Técnico  
+Gourmet Game é um Desafio Técnico  
 
 - Implementação compatível com Java 8, 11
 
-#####Run
+Run
 - java -jar gourmet-game.jar
