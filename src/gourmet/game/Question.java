@@ -7,8 +7,8 @@ public class Question {
     protected JFrame jFrameParent;
     protected Question questionParent;
     protected String description;
-    protected Question yes;
-    protected Question no;
+    private Question yes;
+    private Question no;
 
     protected Question(final JFrame jFrameParent, String description) {
         this.jFrameParent = jFrameParent;
@@ -39,6 +39,6 @@ public class Question {
     }
 
     protected boolean showQuestion(final String title) {
-        return JOptionPane.showConfirmDialog(jFrameParent, "O prato que voc\u00ea pensou \u00e9 " + description + "?", title, 0) == 0;
+        return JOptionPane.showConfirmDialog(jFrameParent, "O prato que voc\u00ea pensou \u00e9 " + description + "?", title, JOptionPane.YES_NO_OPTION) == JOptionPane.OK_OPTION;
     }
 }
