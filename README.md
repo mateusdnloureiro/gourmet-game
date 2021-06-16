@@ -1,6 +1,6 @@
 ### Gourmet Game é um Desafio Técnico  
 
-- Implementação compatível com Java 8, 11
+- Build/Artefatos disponibilizados para Java 6, 8, 11
 
 ##### Run
-- java -jar gourmet-game.jar
+- java -jar gourmet-game-<versao-java>.jar
