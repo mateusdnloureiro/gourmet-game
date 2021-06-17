@@ -1,0 +1,2 @@
+- Mesma versão do Game com a utilização de lambda 
+- Compatível com Java 8 e 11
